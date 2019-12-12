@@ -5,6 +5,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -20,6 +21,7 @@ public class Register extends AppCompatActivity {
 
 
     Spinner jenisKelamin1, latarBelakangPendidikanKu;
+    EditText NamaLengkap, NamaGuru, AlamatLengap, TanggalLahir, NomorTelepon, Email, Password, KonfirmasiPassword, NamaBank, NamaAkunBank, NomorRekening, NomorKTP, NomorNPWP,NamaSekolah, ProfileGuru;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -28,6 +30,22 @@ public class Register extends AppCompatActivity {
 
         jenisKelamin1 = findViewById(R.id.JenisKelamin);
         latarBelakangPendidikanKu = findViewById(R.id.latarPendidikanKu);
+        NamaLengkap = findViewById(R.id.NamaLengkap);
+        NamaGuru = findViewById(R.id.Username);
+        AlamatLengap = findViewById(R.id.Alamat);
+        TanggalLahir = findViewById(R.id.TanggalLahir);
+        NomorTelepon = findViewById(R.id.NomorTelepon);
+        Email = findViewById(R.id.Email);
+        Password = findViewById(R.id.Password);
+        KonfirmasiPassword = findViewById(R.id.KonfirmasiPassword);
+        NamaBank = findViewById(R.id.NamaBank);
+        NamaAkunBank = findViewById(R.id.NamaAkunBank);
+        NomorRekening = findViewById(R.id.NomorRekening);
+        NomorKTP = findViewById(R.id.NomorKTP);
+        NomorNPWP = findViewById(R.id.NomorNPWP);
+        NamaSekolah = findViewById(R.id.NamaSekolah);
+        ProfileGuru = findViewById(R.id.ProfileGuru);
+
 
 
 
