@@ -73,11 +73,10 @@
                     android:layout_marginStart="15dp"
                     android:layout_marginBottom="5dp"
                     android:textSize="15dp"
+                    android:textAlignment="textStart"
                     android:background="@drawable/bg_order"
                     android:hint="Nama Lengkap"
                     android:padding="13dp" />
-
-
 
                 <EditText
                     android:id="@+id/Username"
@@ -92,18 +91,8 @@
                     android:hint="Username"
                     android:padding="13dp" />
 
-                <EditText
-                    android:id="@+id/Email"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginEnd="15dp"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginBottom="5dp"
-                    android:textSize="15dp"
-                    android:background="@drawable/bg_order"
-                    android:hint="Email"
-                    android:padding="13dp" />
+
+
 
                 <EditText
                     android:id="@+id/Alamat"
@@ -121,6 +110,7 @@
                 <Spinner
                     android:id="@+id/JenisKelamin"
                     android:padding="13dp"
+                    android:autofillHints="Laki Laki"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="15dp"
                     android:layout_marginStart="15dp"
@@ -128,6 +118,500 @@
                     android:background="@drawable/bg_order"
                     android:layout_width="match_parent"
                     android:layout_height="45dp"/>
+
+                <EditText
+                    android:id="@+id/TanggalLahir"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="15dp"
+                    android:background="@drawable/bg_order"
+                    android:hint="Tanggal Lahir"
+                    android:padding="13dp" />
+
+                <EditText
+                    android:id="@+id/NomorTelepon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="15dp"
+                    android:inputType="number"
+                    android:background="@drawable/bg_order"
+                    android:hint="Nomor Telepon"
+                    android:padding="13dp" />
+
+                <EditText
+                    android:id="@+id/Email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="15dp"
+                    android:background="@drawable/bg_order"
+                    android:hint="Email"
+                    android:padding="13dp" />
+
+
+
+                <EditText
+                    android:id="@+id/Password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="15dp"
+                    android:background="@drawable/bg_order"
+                    android:hint="Password"
+                    android:padding="13dp" />
+
+
+                <TextView
+                    android:id="@+id/passwordKosong"
+                    android:visibility="gone"
+                    android:text="Password tidak boleh kosong"
+                    android:textSize="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:textStyle="italic"
+                    android:textColor="#FF0000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:id="@+id/KonfirmasiPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="15dp"
+                    android:background="@drawable/bg_order"
+                    android:hint="Konfirmasi Password"
+                    android:padding="13dp" />
+
+                <TextView
+                    android:id="@+id/passwordTidakSama"
+                    android:text="Password tidak sama"
+                    android:textSize="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:visibility="gone"
+                    android:textStyle="italic"
+                    android:textColor="#FF0000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Data Guru"
+                    android:fontFamily="@font/calibrib"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:id="@+id/NamaBank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="15dp"
+                    android:background="@drawable/bg_order"
+                    android:hint="Nama Bank"
+                    android:padding="13dp" />
+
+                <EditText
+                    android:id="@+id/NamaAkunBank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="15dp"
+                    android:background="@drawable/bg_order"
+                    android:hint="Nama Akun Bank"
+                    android:padding="13dp" />
+
+                <EditText
+                    android:id="@+id/NomorRekening"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="15dp"
+                    android:background="@drawable/bg_order"
+                    android:hint="Nomor Rekening"
+                    android:padding="13dp" />
+
+                <TextView
+                    android:text="Data Diri"
+                    android:fontFamily="@font/calibrib"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:id="@+id/NomorKTP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:inputType="number"
+                    android:textSize="15dp"
+                    android:background="@drawable/bg_order"
+                    android:hint="Nomor KTP"
+                    android:padding="13dp" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/bg_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/UploadKTP"
+                        android:padding="50dp"
+                        android:layout_margin="10dp"
+                        android:layout_gravity="center"
+                        android:background="#B4B4B4"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"/>
+
+                    <TextView
+                        android:text="Upload Foto KTP"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="#B1B1B1"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/calibri"
+                        android:textSize="12dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Tekan untuk mengganti gambar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/NomorNPWP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:inputType="number"
+                    android:textSize="15dp"
+                    android:background="@drawable/bg_order"
+                    android:hint="Nomor NPWP"
+                    android:padding="13dp" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/bg_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/UploadNPWP"
+                        android:padding="50dp"
+                        android:layout_margin="10dp"
+                        android:layout_gravity="center"
+                        android:background="#B4B4B4"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"/>
+
+                    <TextView
+                        android:text="Upload Foto NPWP"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="#B1B1B1"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/calibri"
+                        android:textSize="12dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Tekan untuk mengganti gambar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:text="Latar Belakang Pendidikan"
+                    android:fontFamily="@font/calibrib"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <Spinner
+                    android:id="@+id/LatarPendidikan"
+                    android:padding="13dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/bg_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"/>
+
+                <EditText
+                    android:id="@+id/NamaSekolah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="15dp"
+                    android:background="@drawable/bg_order"
+                    android:hint="Nama Sekolah/Perguruan Tinggi/Instansi"
+                    android:padding="13dp" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/bg_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/UploadIjazah"
+                        android:padding="50dp"
+                        android:layout_margin="10dp"
+                        android:layout_gravity="center"
+                        android:background="#B4B4B4"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"/>
+
+                    <TextView
+                        android:text="Upload Ijazah Terakhir"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="#B1B1B1"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/calibri"
+                        android:textSize="12dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Tekan untuk mengganti gambar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:text="Rincian Mengajar"
+                    android:fontFamily="@font/calibrib"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+                <Button
+                    android:id="@+id/TAmbahMateri"
+                    android:text="Tambah Materi"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/bg_button_biru"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Profile Guru"
+                    android:fontFamily="@font/calibrib"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+                <EditText
+                    android:id="@+id/ProfileGuru"
+                    android:layout_gravity="start"
+                    android:gravity="start"
+                    android:lines="7"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="15dp"
+                    android:background="@drawable/bg_order"
+                    android:hint="Ceritakan tentang diri Anda dan pengalaman belajar"
+                    android:padding="13dp" />
+
+                <TextView
+                    android:text="Lokasi Mengajar"
+                    android:fontFamily="@font/calibrib"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+                <Button
+                    android:id="@+id/TambahLokasi"
+                    android:text="Tambah Lokasi"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/bg_button_biru"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:weightSum="80"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:layout_weight="7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:text="Saya sudah menyetujui"
+                        android:textSize="12dp"
+                        android:layout_weight="26"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:text="Syarat dan Ketentuan"
+                        android:textSize="12dp"
+                        android:textColor="#474747"
+                        android:layout_weight="25"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginEnd="3dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:text="ini"
+                        android:textSize="12dp"
+                        android:layout_weight="10"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/Daftar"
+                    android:text="Daftar"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/bg_button_biru"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
 
             </LinearLayout>
 

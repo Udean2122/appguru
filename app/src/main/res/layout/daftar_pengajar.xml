@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:elevation="1dp"
+        android:theme="@style/AppTheme">
+
+        <ImageView
+            android:id="@+id/backRiwayat"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_chevron_left_black_24dp" />
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Edit Profile"
+            android:textColor="#000"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#FFFFFF" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginLeft="22dp"
+            android:textColor="#000"
+            android:textSize="33dp"
+            android:text="Data Pengajar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <EditText
+            android:id="@+id/nomor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textSize="15dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bg_order"
+            android:hint="Nama Lengkap"
+            android:padding="13dp"/>
+
+        <EditText
+            android:id="@+id/nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bg_order"
+            android:hint="Username"
+            android:padding="13dp" />
+
+        <EditText
+            android:id="@+id/telepon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bg_order"
+            android:hint="Email"
+            android:textSize="15dp"
+            android:padding="13dp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bg_order"
+            android:hint="Alamat Lengkap"
+            android:textSize="15dp"
+            android:padding="13dp" />
+
+        <EditText
+            android:id="@+id/alamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bg_order"
+            android:hint="Nomor Telepon"
+            android:textSize="15dp"
+            android:padding="13dp" />
+
+        <EditText
+            android:id="@+id/sandi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bg_order"
+            android:hint="Kata Sandi"
+            android:textSize="15dp"
+            android:padding="13dp" />
+
+        <EditText
+            android:id="@+id/tgl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bg_order"
+            android:hint="Tanggal Lahir"
+            android:textSize="15dp"
+            android:padding="13dp" />
+
+
+        <Button
+            android:id="@+id/button"
+            android:paddingVertical="5dp"
+            android:layout_marginTop="25dp"
+            android:text="Perbarui"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:textAllCaps="false"
+            android:background="#03A9F4"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

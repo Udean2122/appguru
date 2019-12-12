@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Assalamualikum Wr. Wb"
+            android:gravity="center_horizontal"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:text="Selamat datang Ustad / Ustadzah "
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:src="@drawable/ayobelajarguru" />
+
+
+
+        <EditText
+            android:id="@+id/username"
+            android:hint="Username"
+            android:padding="13dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="7dp"
+            android:inputType="number"
+            android:background="@drawable/bg_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:background="@drawable/bg_order"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="7dp"
+            android:textSize="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/sandi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:background="@drawable/bg_order"
+                android:hint="Masukkan Kata Sandi"
+                android:padding="13dp"/>
+
+            <ImageView
+                android:id="@+id/lihatPasswordKu"
+                android:layout_alignParentRight="true"
+                android:layout_margin="12dp"
+                android:src="@drawable/eye"
+                android:layout_width="25dp"
+                android:layout_height="25dp"/>
+
+            <ImageView
+                android:id="@+id/hidePasswordKu"
+                android:layout_alignParentRight="true"
+                android:layout_margin="12dp"
+                android:src="@drawable/hide"
+                android:layout_width="25dp"
+                android:layout_height="25dp"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/login"
+            android:text="Login"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="7dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:background="@drawable/bg_button_biru"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Butuh Bantuan"
+                android:gravity="right"
+                android:layout_marginEnd="2dp"
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/callCenter"
+                android:textColor="#000"
+                android:text="Call Support Center"
+                android:layout_marginStart="5dp"
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
