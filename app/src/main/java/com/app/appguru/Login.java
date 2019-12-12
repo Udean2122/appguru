@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
@@ -35,6 +36,7 @@ public class Login extends AppCompatActivity {
     Button masuk;
     ProgressBar progressBar;
     ImageView lihatPassword, hidePassword;
+    TextView register, callCenter;
     SharedPreferences preferences;
     SharedPreferences.Editor editor;
     SessionManager sessionManager;
@@ -49,6 +51,16 @@ public class Login extends AppCompatActivity {
         lihatPassword = findViewById(R.id.lihatPasswordKu);
         hidePassword = findViewById(R.id.hidePasswordKu);
         masuk = findViewById(R.id.login);
+        register = findViewById(R.id.Regiter);
+        callCenter = findViewById(R.id.callCenter);
+
+        register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplication(), Register.class);
+                startActivity(intent);
+            }
+        });
 
         lihatPassword.setOnClickListener(new View.OnClickListener() {
             @Override

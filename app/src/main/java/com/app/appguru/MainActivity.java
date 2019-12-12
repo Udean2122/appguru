@@ -10,8 +10,8 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
-import com.example.guruayobelajar.Fragment.FragmentHome;
-import com.example.guruayobelajar.Fragment.FragmentProfile;
+import com.app.appguru.Fragment.FragmentHome;
+import com.app.appguru.Fragment.FragmentProfile;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
