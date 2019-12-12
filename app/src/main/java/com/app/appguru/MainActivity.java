@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        frame = findViewById(R.id.frame);
+        frame = findViewById(R.id.frameKu);
         bottomNavigationView = findViewById(R.id.bottom);
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
 
@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         if (fragment != null) {
             getSupportFragmentManager()
                     .beginTransaction()
-                    .replace(R.id.frame, fragment)
+                    .replace(R.id.frameKu, fragment)
                     .commit();
 
             return true;

@@ -53,6 +53,7 @@ public class Login extends AppCompatActivity {
         masuk = findViewById(R.id.login);
         register = findViewById(R.id.Regiter);
         callCenter = findViewById(R.id.callCenter);
+        progressBar = findViewById(R.id.loadinglogin);
 
         register.setOnClickListener(new View.OnClickListener() {
             @Override
